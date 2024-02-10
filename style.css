@@ -1,12 +1,12 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root { --color-dark: #000; --color-white: #fff; --white-smoke: #f0f0f0; }
-body { background: var(--white-smoke); /* height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; */}
+body { background: var(--white-smoke); }
 .container { width: 794px; background: #fff; margin: 4rem auto; padding: 0 2rem; box-shadow: 0 0 3rem rgba(0, 0, 0, .2); }
-.cv { width: 100%; display: flex; gap: 2.5rem; }
+.cv { width: 100%; height: 100%; display: flex; gap: 2.5rem; }
 /********************** left slide ***************************/
-.cv .left-slide { width: 35%; background: #f4f4f4; }
+.cv .left-slide { width: 35%; height: 100%; background: #f4f4f4; }
 /********************** Presentation desgin ***************************/
-.cv .left-slide .presentation { background: var(--color-dark); text-align: center; padding-top: 2rem; border-bottom-left-radius: 125px; border-bottom-right-radius: 125px; }
+.cv .left-slide .presentation { width: 100%; background: var(--color-dark); text-align: center; padding-top: 2rem; border-bottom-left-radius: 125px; border-bottom-right-radius: 125px; }
 .cv .left-slide .presentation .name { color: var(--color-white); }
 .cv .left-slide .presentation .proffession { color: #fff; font-size: 16px; }
 .cv .left-slide .presentation .profil { width: 100%; display: flex; align-items: center; justify-content: center; padding: 10px 0; }
@@ -63,6 +63,7 @@ body { background: var(--white-smoke); /* height: 100vh; display: flex; justify-
 .cv .right-slide .skills .items .item .bar.mongodb { width: 50%; }
 .cv .right-slide .skills .items .item .bar.totaljs { width: 60%; }
 .cv .right-slide .skills .items .item .bar.python { width: 30%; }
+.cv .right-slide .skills .items .item .bar.github { width: 80%; }
 /********************** Others(language and hobbies) desgin ***************************/
 .cv .right-slide .others { width: 100%; display: flex; gap: 2rem; justify-content: space-around; }
 .cv .right-slide .others :where( .language, .hobbies) { width: 50%; }
@@ -78,3 +79,17 @@ body { background: var(--white-smoke); /* height: 100vh; display: flex; justify-
 .download { width: 100%; text-align: center;  margin: 3rem 0;}
 .download .btn { outline: none; padding: .5rem; border-radius: 5px; cursor: pointer; box-shadow: 0 0 2rem rgba(0, 0, 0, .3); transition: all .5s ease-in-out; }
 .download .btn:hover { transform: scale(1.1); box-shadow: none; background: #fff;}
+
+/********************** Responsive desgin ***************************/
+@media screen and (max-width: 991px) {
+    .container { width: 95%; padding: 0 10px;}
+}
+
+@media screen and (max-width: 768px) {
+
+    .cv { flex-direction: column; }
+    .cv .left-slide,.cv .right-slide { width: 100%; }
+    .cv .left-slide .presentation { width: 70%; margin: 0 auto; }
+    .cv .left-slide .contact { width: fit-content; margin: 1rem auto; }
+    .cv .left-slide .learnning { width: 80%; text-align: center; }
+}
