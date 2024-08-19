@@ -20,7 +20,3 @@ slider.addEventListener('click', () => {
 
 
 
-
-
-
-console.log('hi');

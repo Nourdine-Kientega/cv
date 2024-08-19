@@ -87,7 +87,7 @@ body { background: var(--white-smoke); }
 .cv .right-slide .others :where( .language, .hobbies) { width: 50%; }
 /********************** Languages desgin ***************************/
 /* .cv .right-slide .others .language { width: 100%; } */
-.cv .right-slide .others .language .title { margin-left: 1rem; }
+/* .cv .right-slide .others .language .title { margin-left: 1rem; } */
 .cv .right-slide .others .language .items { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-between; margin: 0 1rem; }
 .cv .right-slide .others .language .items .item { width: 40%; }
 /********************** Hobbies desgin ***************************/
