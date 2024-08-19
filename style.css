@@ -107,6 +107,7 @@ body { background: var(--white-smoke); }
 @media screen and (max-width: 768px) {
 
     .cv { flex-direction: column; }
+    .slider { right: -2px; top: -45px; }
     .cv .left-slide,.cv .right-slide { width: 100%; }
     .cv .left-slide .presentation { width: 70%; margin: 0 auto; }
     .cv .left-slide .contact { width: fit-content; margin: 1rem auto; }
