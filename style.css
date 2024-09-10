@@ -1,7 +1,8 @@
+/********************** global design ***************************/
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root { --color-dark: #000; --color-white: #fff; --white-smoke: #f0f0f0; }
 body { background: var(--white-smoke); }
-.container { width: 794px; background: #fff; margin: 4rem auto; padding: 0 2rem; box-shadow: 0 0 3rem rgba(0, 0, 0, .2); }
+.container { width: 825px; background: #fff; margin: 4rem auto; padding: 0 2rem; box-shadow: 0 0 3rem rgba(0, 0, 0, .2); }
 .cv { width: 100%; height: 100%; display: flex; gap: 2.5rem; }
 .french, .english { display: none; }
 .french.active { display: block; }
@@ -14,15 +15,18 @@ body { background: var(--white-smoke); }
 .slider .toggle .lang { width: 100%; padding: 5px 12px; display: flex; justify-content: space-between; }
 .slider .toggle .circle { width: 37px; height: 23px; position: absolute; top: 2px; left: 2px; background: #fff; cursor: pointer; border-radius: 15px; transition: all .8s ease; }
 .slider .toggle .circle.active { left: 35px; }
+
 /********************** left slide ***************************/
 .cv .left-slide { width: 35%; background: #f4f4f4; }
+
 /********************** Presentation desgin ***************************/
 .cv .left-slide .presentation { width: 100%; background: var(--color-dark); text-align: center; padding-top: 2rem; border-bottom-left-radius: 125px; border-bottom-right-radius: 125px; }
 .cv .left-slide .presentation .name { color: var(--color-white); }
 .cv .left-slide .presentation .proffession { color: #fff; font-size: 16px; }
-.cv .left-slide .presentation .profil { width: 100%; display: flex; align-items: center; justify-content: center; padding: 10px 0; }
+.cv .left-slide .presentation .profil { width: 100%; display: flex; align-items: center; justify-content: center; padding: 8px; }
 .cv .left-slide .presentation .profil div { width: 220px; height: 215px; border: 7px solid #fff; border-radius: 50%; }
 .cv .left-slide .presentation .profil img { width: 100%; height: 100%; border-radius: 50%; }
+
 /********************** Contact desgin ***************************/
 .cv .left-slide .contact { width: 100%; text-align: center; margin: 1rem 0; padding: 0 5px; }
 .cv .left-slide .title { width: 100%; display: flex; align-items: center; justify-content: center; margin: 1rem 0; }
@@ -31,6 +35,7 @@ body { background: var(--white-smoke); }
 .cv .left-slide .contact .items { width: 100%; }
 .cv .left-slide .contact .items .item { display: flex; align-items: center; padding-bottom: 5px; gap: 5px;  }
 .cv .left-slide .contact .items .item svg { width: 10px; height: 10px; }
+
 /********************** Learnnig desgin ***************************/
 .cv .left-slide .learnning { width: 90%; height: calc(100% - 539px); border: 1px solid; margin: 0 auto; padding: 3rem 1rem; border-top-left-radius: 125px; border-top-right-radius: 125px; color: #fff; background: #000; }
 .cv .left-slide .learnning .title .icon { background: #f1f1f1; }
@@ -39,18 +44,22 @@ body { background: var(--white-smoke); }
 .cv .left-slide .learnning .items .item { width: 100%; margin: 10px 0; }
 .cv .left-slide .learnning .items .item h4 { font-weight: bold; margin-bottom: 6px; }
 .cv .left-slide .learnning .items .item div { font-size: 14px; color: whitesmoke; margin-bottom: 3px; } 
+
 /********************** Exprerience and reference desgin ***************************/
 .cv .left-slide .learnning :where(.education, .reference) { margin: 2rem 0; }
 .cv .left-slide .learnning .reference .items .item { margin: 1rem 0; }
 .cv .left-slide .learnning .reference .items .item .name { letter-spacing: .05rem; }
+
 /********************** Rigth slide ***************************/ 
-.cv .right-slide {width: 100%; padding: 1rem 0; }
+.cv .right-slide {width: 100%; padding: 1.5rem 0 2rem; }
 .cv .right-slide .title { width: 100%; display: flex; align-items: center; justify-content: flex-start; margin: 1rem 0; }
 .cv .right-slide .title .icon { width: 20px; height: 20px; margin-right: 10px; background: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .cv .right-slide .title .icon svg { width: 75%; height: 75%; fill: #fff; }
 .cv .right-slide :where(.about, .experience, .skills, .language, .hobbies) { widows: 100%; margin-top: 2.5rem; }
+
 /********************** About desgin ***************************/
 .cv .right-slide .about .name { font-size: 1.1rem; font-weight: bold; }
+
 /********************** Experience desgin ***************************/
 .cv .right-slide .experience { width: 100%; }
 .cv .right-slide .experience .items { width: 100%; }
@@ -60,18 +69,23 @@ body { background: var(--white-smoke); }
 .cv .right-slide .experience .items .item .description { margin-bottom: .5rem; }
 .cv .right-slide .experience .items .item .description span { font-weight: bold; margin: 2px 0; }
 .cv .right-slide .experience .items .item .keyword { font-weight: bold; }
+
 /********************** Skills desgin ***************************/
 .cv .right-slide .skills { width: 100%; }
-.cv .right-slide .skills .items { width: 100%; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
-.cv .right-slide .skills .items .item { width: 45%; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.cv .right-slide .skills .main_skills, .add_skills { width: fit-content; border-bottom: 2px solid #000; padding-bottom: 0px; margin-bottom: .5rem; }
+.cv .right-slide .skills .items { width: 100%; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; margin-bottom: 1.2rem; }
+.cv .right-slide .skills .items:last-child { margin-bottom: 0; }
+.cv .right-slide .skills .items .item { width: 45%; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; text-transform: uppercase; }
 .cv .right-slide .skills .items .item .name { width: 50%; }
 .cv .right-slide .skills .items .item .progress_bar { width: 40%; height: 5px; background: #d5d4d4; border-radius: 10px;  }
 .cv .right-slide .skills .items .item .bar { width: 0%; height: 100%; background: #000; border-radius: 10px; }
+
 /********************** Skills language percentage desgin ***************************/
 .cv .right-slide .skills .items .item .bar.html { width: 80%; }
 .cv .right-slide .skills .items .item .bar.css { width: 65%; }
 .cv .right-slide .skills .items .item .bar.bootstrap { width: 55%; }
 .cv .right-slide .skills .items .item .bar.js { width: 60%; }
+.cv .right-slide .skills .items .item .bar.ts { width: 35%; }
 .cv .right-slide .skills .items .item .bar.react { width: 70%; }
 .cv .right-slide .skills .items .item .bar.nodejs { width: 65%; }
 .cv .right-slide .skills .items .item .bar.mysql { width: 55%; }
@@ -82,22 +96,21 @@ body { background: var(--white-smoke); }
 .cv .right-slide .skills .items .item .bar.github { width: 75%; }
 .cv .right-slide .skills .items .item .bar.php { width: 55%; }
 .cv .right-slide .skills .items .item .bar.laravel { width: 45%; }
+.cv .right-slide .skills .items .item .bar.docker { width: 10%; }
+.cv .right-slide .skills .items .item .bar.firebase { width: 10%; }  
+
 /********************** Others(language and hobbies) desgin ***************************/
 .cv .right-slide .others { width: 100%; display: flex; gap: 2rem; justify-content: space-around; }
-.cv .right-slide .others :where( .language, .hobbies) { width: 50%; }
+.cv .right-slide .others :where( .language, .hobbies) { width: 50%; margin-top: 1.5rem; }
+
 /********************** Languages desgin ***************************/
-/* .cv .right-slide .others .language { width: 100%; } */
-/* .cv .right-slide .others .language .title { margin-left: 1rem; } */
-.cv .right-slide .others .language .items { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-between; margin: 0 1rem; }
-.cv .right-slide .others .language .items .item { width: 40%; }
-/********************** Hobbies desgin ***************************/
-.cv .right-slide .others .hobbies .items { width: 100%; }
-.cv .right-slide .others .hobbies .items .item { width: 100%; margin: .5rem; }
+.cv .right-slide .others .language .items, .right-slide .others .hobbies .items { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-between; margin: 0 1rem; }
+.cv .right-slide .others .language .items .item, .right-slide .others .hobbies .items .item { width: 45%; }
+
 /********************** Download desgin ***************************/
 .download { width: 100%; text-align: center;  margin: 3rem 0;}
 .download .btn { outline: none; padding: .5rem; border-radius: 5px; cursor: pointer; box-shadow: 0 0 2rem rgba(0, 0, 0, .3); transition: all .5s ease-in-out; }
 .download .btn:hover { transform: scale(1.1); box-shadow: none; background: #fff;}
-
 
 /********************** Responsive desgin ***************************/
 @media screen and (max-width: 991px) {
