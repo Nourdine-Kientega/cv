@@ -37,7 +37,7 @@ body { background: var(--white-smoke); }
 .cv .left-slide .contact .items .item svg { width: 10px; height: 10px; }
 
 /********************** Learnnig desgin ***************************/
-.cv .left-slide .learnning { width: 90%; height: calc(100% - 539px); border: 1px solid; margin: 0 auto; padding: 3rem 1rem; border-top-left-radius: 125px; border-top-right-radius: 125px; color: #fff; background: #000; }
+.cv .left-slide .learnning { width: 90%; height: calc(100% - 535px); border: 1px solid; margin: 0 auto; padding: 3rem 1rem; border-top-left-radius: 125px; border-top-right-radius: 125px; color: #fff; background: #000; }
 .cv .left-slide .learnning .title .icon { background: #f1f1f1; }
 .cv .left-slide .learnning .title .icon svg { fill: #000; }
 .cv .left-slide .learnning .items { width: 100%; margin: 1rem 0; }
@@ -45,17 +45,18 @@ body { background: var(--white-smoke); }
 .cv .left-slide .learnning .items .item h4 { font-weight: bold; margin-bottom: 6px; }
 .cv .left-slide .learnning .items .item div { font-size: 14px; color: whitesmoke; margin-bottom: 3px; } 
 
-/********************** Exprerience and reference desgin ***************************/
-.cv .left-slide .learnning :where(.education, .reference) { margin: 2rem 0; }
+/********************** Exprerience, Reference desgin, language and hobbies desgin ***************************/
+.cv .left-slide .learnning :where(.education, .reference, .language, .hobbies) { margin: 2rem 0; }
 .cv .left-slide .learnning .reference .items .item { margin: 1rem 0; }
 .cv .left-slide .learnning .reference .items .item .name { letter-spacing: .05rem; }
+.cv .left-slide .learnning :where(.language, .hobbies) .items { padding-left: 1rem; }
 
 /********************** Rigth slide ***************************/ 
 .cv .right-slide {width: 100%; padding: 1.5rem 0 2rem; }
 .cv .right-slide .title { width: 100%; display: flex; align-items: center; justify-content: flex-start; margin: 1rem 0; }
 .cv .right-slide .title .icon { width: 20px; height: 20px; margin-right: 10px; background: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .cv .right-slide .title .icon svg { width: 75%; height: 75%; fill: #fff; }
-.cv .right-slide :where(.about, .experience, .skills, .language, .hobbies) { widows: 100%; margin-top: 2.5rem; }
+.cv .right-slide :where(.about, .experience, .skills, .certifications) { width: 100%; margin-top: 2.5rem; }
 
 /********************** About desgin ***************************/
 .cv .right-slide .about .name { font-size: 1.1rem; font-weight: bold; }
@@ -99,13 +100,12 @@ body { background: var(--white-smoke); }
 .cv .right-slide .skills .items .item .bar.docker { width: 10%; }
 .cv .right-slide .skills .items .item .bar.firebase { width: 10%; }  
 
-/********************** Others(language and hobbies) desgin ***************************/
-.cv .right-slide .others { width: 100%; display: flex; gap: 2rem; justify-content: space-around; }
-.cv .right-slide .others :where( .language, .hobbies) { width: 50%; margin-top: 1.5rem; }
-
-/********************** Languages desgin ***************************/
-.cv .right-slide .others .language .items, .right-slide .others .hobbies .items { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-between; margin: 0 1rem; }
-.cv .right-slide .others .language .items .item, .right-slide .others .hobbies .items .item { width: 45%; }
+/********************** Certifications desgin ***************************/
+.cv .right-slide .certifications { width: 100%; }
+.cv .right-slide .certifications .platform { width: fit-content; border-bottom: 2px solid #000; padding-bottom: 0px; margin-bottom: .5rem; }
+.cv .right-slide .certifications .items { width: 100%; display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1.2rem; }
+.cv .right-slide .certifications .items .item { width: fit-content; gap: 1.5rem; }
+.cv .right-slide .certifications .items .item .content .file { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
 
 /********************** Download desgin ***************************/
 .download { width: 100%; text-align: center;  margin: 3rem 0;}
