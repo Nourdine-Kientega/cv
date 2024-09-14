@@ -99,6 +99,8 @@ body { background: var(--white-smoke); }
 .cv .right-slide .skills .items .item .bar.laravel { width: 45%; }
 .cv .right-slide .skills .items .item .bar.docker { width: 10%; }
 .cv .right-slide .skills .items .item .bar.firebase { width: 10%; }  
+.cv .right-slide .skills .items .item .bar.word { width: 45%; }  
+.cv .right-slide .skills .items .item .bar.react_native { width: 45%; }  
 
 /********************** Certifications desgin ***************************/
 .cv .right-slide .certifications { width: 100%; }
