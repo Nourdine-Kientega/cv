@@ -10,7 +10,7 @@ body { background: var(--white-smoke); }
 
 /********************** toggle btn ***************************/
 .cv-container { position: relative; }
-.slider { width: 74px; height: 28px; position: absolute; right: 360px; top: 77px; background: #000; color: #fff; border-radius: 15px; }
+.slider { width: 74px; height: 28px; position: absolute; right: 344px; top: 22px; background: #000; color: #fff; border-radius: 15px; }
 .slider .toggle { position: relative; }
 .slider .toggle .lang { width: 100%; padding: 5px 12px; display: flex; justify-content: space-between; }
 .slider .toggle .circle { width: 37px; height: 23px; position: absolute; top: 2px; left: 2px; background: #fff; cursor: pointer; border-radius: 15px; transition: all .8s ease; }
