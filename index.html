@@ -36,8 +36,6 @@
 
         <div class="cv-container" id="cvContent">
 
-
-
             <!-- french version -->
             <div class="french active" >
                 <main class="cv">
@@ -674,33 +672,8 @@
         <button class="btn">Dowload CV</button>
     </div><!-- Download CV link -->
 
-    <!-- html2pdf JS link -->
-    <!-- <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script> -->
-
     <!-- Custom JS link -->
      <script src="./script.js"></script> 
-
-    <!-- <script>
- 
-
-        // Charger la bibliothèque html2pdf
-const downloadButton = document.getElementById('downloadCvBtn');
-const cvContent = document.getElementById('cvContent');
-
-downloadButton.addEventListener('click', function() {
-  // Créer une instance html2pdf avec les options souhaitées
-  const options = {
-    margin:       2,  // marges réduites
-    filename:     'cv-john-doe.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2 },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
-  // Générer le PDF
-  html2pdf().from(cvContent).set(options).save();
-});
-    </script>
--->
 
 </body>
 </html>
