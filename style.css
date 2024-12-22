@@ -72,6 +72,7 @@ body { background: var(--white-smoke); }
 .cv .right-slide .experience .items { width: 100%; }
 .cv .right-slide .experience .items .item { width: 100%; margin-bottom: 1rem; }
 .cv .right-slide .experience .items .item .domain { width: 100%; }
+.cv .right-slide .experience .items .item .domain .status { text-decoration: underline; }
 .cv .right-slide .experience .items .item .domain .duration { font-weight: bold; margin: 2px 0; }
 .cv .right-slide .experience .items .item .description { margin-bottom: .5rem; }
 .cv .right-slide .experience .items .item .description span { font-weight: bold; margin: 2px 0; }
