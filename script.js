@@ -27,5 +27,5 @@ document.getElementById("downloadCvBtn").addEventListener("click", function() {
         .set({
             margin: [5, 5, 0, 5]  // Marge de 2px pour chaque côté (haut, droite, bas, gauche)
         })
-        .save("Nourdine Kientega.pdf");  // Nom du fichier PDF
+        .save("CV Nourdine Kientega.pdf");  // Nom du fichier PDF
 });
