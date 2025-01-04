@@ -2,12 +2,6 @@ const french = document.querySelector('.french');
 const english = document.querySelector('.english');
 const slider = document.querySelector('.slider .circle');
 
-
-// if(french.classList.contains('active')) {
-//     document.getElementById('btn').textContent = 'Telecharger le CV';
-    
-// }
-
 slider.addEventListener('click', () => {
 
     french.classList.toggle('active');
